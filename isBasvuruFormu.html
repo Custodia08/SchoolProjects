@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İs Başvuru Formu</title>
+</head>
+  <body>
+    <h1>İş Başvuru Formu</h1>
+    <form method="get" name="BasvuruFormu">
+      <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <p>
+          <label>Ad Soyad</label>
+          <br>
+          <input type="text" name="Ad" placeholder="Ad Soyad Giriniz">
+          <br>
+          <br>
+          <label>Doğum Tarihi</label>
+          <br>
+          <br>
+          <input type="date" name="dogumTarihi">
+          <br>
+          <br>
+          <input type="radio" name="cins">Erkek
+          <input type="radio" name="cins">Erkek
+        </fielset>
+        </p>
+        <fieldset>
+          <legend>İletişim Bilgileri</legend>
+          <p>
+            <label>E-posta</label>
+            <br>
+            <input type="text" name="e-posta" placeholder="Eposta giriniz">
+            <br>
+            <br>
+            <label>Telefon</label>
+            <br>
+            <input type="tel" name="tel" placeholder="5555555555">
+            <br>
+            <br>
+            <select name="sehir">
+              <option value="34">İstanbul</option>
+            </select>
+            <br>
+            <br>
+            <label>İlçe</label>
+            <br>
+            <br>
+            <input type="text" name="ilçe">
+            <br>
+            <label>E-Adres</label>
+            <br>
+            <textarea name="adres"  cols="30" rows="10"></textarea>
+            <br>
+            <label>Web Sitesi</label>
+            <br>
+            <input type="text" name="web" placeholder="Web Sitesinin Aresini Giriniz">
+          </p>
+        </fieldset>
+          <fieldset>
+            <legend>Kariyer Bilgileri</legend>
+            <label>Başvurduğunuz birim</label><br>
+            <input type="text" name="birim" placeholder="Satış/Pazalama"><br>
+            <br>
+            <label>İş tecrübesi</label><br>
+            <input type="number" min="0" value="0">yıl <br>
+            <br>
+            <label>Yabancı dil seviyesi</label><br>
+            <input type="range">
+          </fieldset>
+          <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <label>Hobiler</label>
+            <input type="checkbox" name="c1">Kitap
+            <input type="checkbox" name="c2">Müzik
+            <input type="checkbox" name="c3">Sinema
+            <br>
+            <br>
+            <label>Favori Renk</label>
+            <input type="color" name="renk">
+            <br>
+            <br>
+            <label>Fotoğraf Yükle</label><br>
+            <input type="file">
+          </fieldset>
+      <button type="submit">Okudum Anladım</button>
+      <button disabled="on">Tamam</button>
+      <button type="reset">Temizle</button>
+    </form>
+  </body>
+</html>

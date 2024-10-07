@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+  <body>
+    <form name="example" method="get" autocomplete="on">
+      <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <label>Ad</label><br>
+        <input type="text" name="Name" placeholder="Adınız">
+        <br>
+        <br>
+        <label>Soyad</label><br>
+        <input type="text" name="Surname" placeholder="Soyadınız">
+        <br>
+        <br>
+        <label>Cinsiyet</label><br>
+        <input type="radio" name="Gender">Erkek
+        <input type="radio" name="Gender">Kadın
+        <br>
+        <br>
+        <label>Hobiler</label><br>
+        <input type="checkbox" name="cb1">Kitap
+        <input type="checkbox" name="cb2">Müzik
+        <input type="checkbox" name="cb3">Spor
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend>Diğer Bilgiler</legend>
+        <label>İl</label>
+        <select name="Cities">
+          <option value="08">Ankara</option>
+          <option value="53">Rize</option>
+          <option value="68">Aksaray</option>
+        </select>
+        <br>
+        <br>
+        <label>İlçe</label>
+        <input type="text">
+        <br>
+        <br>
+        <textarea name="AboutMe" cols="30" rows="10" placeholder="Benim Hakkımda"></textarea>
+      </fieldset>
+      <br>
+      <button type="submit">Tamam</button>
+      <button type="reset">Temizle</button>
+      <button name="warning">Uyarı</button>
+    </form>
+  </body>
+</html>
