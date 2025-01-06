@@ -1,0 +1,11 @@
+.kapsa{
+  background-color: gray;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 10vh 20vh 30vh;
+  gap: 1vw;
+  padding: 10px;
+}
+.kapsa div{
+  background-color: aqua ;
+}
