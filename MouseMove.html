@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseMove</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<script>
+    function Image1(){
+        document.getElementById("img1").style.zIndex = 2;
+        document.getElementById("img2").style.zIndex = 1;
+        document.getElementById("img3").style.zIndex = 1;
+        document.body.style.backgroundColor = "rgb(66, 25, 1)";
+    }
+    function Image2(){
+        document.getElementById("img1").style.zIndex = 1;
+        document.getElementById("img2").style.zIndex = 2;
+        document.getElementById("img3").style.zIndex = 1;
+        document.body.style.backgroundColor = "rgb(108, 21, 116)";
+    }
+    function Image3(){
+        document.getElementById("img1").style.zIndex = 1;
+        document.getElementById("img2").style.zIndex = 1;
+        document.getElementById("img3").style.zIndex = 2;
+        document.body.style.backgroundColor = "rgb(221, 94, 9)";
+    }
+</script>
+<body>
+    <div id="ImageBox">
+        <img src="Images/Mel (This is the Progress Day).gif" id="img1">
+        <img src="Images/Isaac Netero Netero Renatojxd GIF - Isaac Netero Netero Renatojxd Netero - Discover & Share GIFs.gif" id="img2">
+        <img src="Images/☆~Given~☆Foto.gif" id="img3">
+    </div>
+    <div id="buttonBox">
+        <button onmousemove="Image1()">First Image</button>
+        <button onmousemove="Image2()">Second Image</button>
+        <button onmousemove="Image3()">Third Image</button>
+    </div>
+</body>
+</html>

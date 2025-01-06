@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode</title>
+</head>
+<script>
+    function DarkMode(){
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    }
+    function LightMode(){
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+    }
+</script>
+<body>
+    <p style="font-size: large;">Mrblr</p>
+    <button style="width: 100px;" onmousedown="DarkMode()">Dark Mode</button>
+    <button style="width: 100px;" onmousedown="LightMode()">Light Mode</button>
+</body>
+</html>

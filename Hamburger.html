@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <link rel="stylesheet" href="Hamburger.css">
+</head>
+
+<script>
+    function Image1(){
+        document.getElementById("hamburgerImage").style.backgroundImage = "url('Images/hamburger-01.jpg')"
+    }
+    function Image2(){
+        document.getElementById("hamburgerImage").style.backgroundImage = "url('Images/hamburger-02.jpg')"
+    }
+    function Image3(){
+        document.getElementById("hamburgerImage").style.backgroundImage = "url('Images/hamburger-11.jpg')"
+    }
+    function hesapla(){
+        var fiyat1, fiyat2, adet1, adet2, toplam, KDV, adetValue1, adetValue2, fiyatValue1, fiyatValue2;
+            adetValue1 = document.getElementById("UrunAdet1").value
+            adetValue2 = document.getElementById("UrunAdet2").value
+            fiyatValue1 = document.getElementById("UrunFiyat1").value
+            fiyatValue2 = document.getElementById("UrunFiyat2").value
+            fiyat1 = Number(fiyatValue1);
+            fiyat2 = Number(fiyatValue2);
+            adet1 = Number(adetValue1);
+            adet2 = Number(adetValue2);
+            toplam = (fiyat1*adet1)+ (adet2*fiyat2);
+            KDV = (toplam/120)*20;
+        document.getElementById("KDV").innerHTML = "KDV %20: " + KDV;
+        document.getElementById("tutar").innerHTML = "Tutar: " + toplam;
+    }
+</script>
+
+<body>
+    <div id="logoBar">
+        <p style="color: red; font-size: large;"><img src="Images/hamburger-11.jpg" id="hamburger1"> Hamburger </p>
+    </div>
+
+    <div id="hamburgerImage" style="background-image: url(Images/hamburger-01.jpg);"></div>
+
+    <div id="bar">
+        <button onmousemove="Image1()" class="menu">Menu 1</button>
+        <button onmousemove="Image2()" class="menu">Menu 2</button>
+        <button onmousemove="Image3()" class="menu">Menu 3</button>
+    </div>
+
+    <div id="bar2" class="divBorder">
+        <ul type="none">
+            <li><p class="barP">Ana Sayfa</p></li>
+            <li><p class="barP">Ürünler</p></li>
+            <li><p class="barP">İletişim</p></li>
+        </ul>
+    </div>
+
+    <div class="divBorder" id="PriceBox">
+        <p><b>Ürün Sipariş</b></p>
+        <p>1. Ürün Adet <input type="text" id="UrunAdet1"> 1. Ürün Fiyat <input type="text" id="UrunFiyat1"></p>
+        <p>2. Ürün Adet <input type="text" id="UrunAdet2"> 2. Ürün Fiyat <input type="text" id="UrunFiyat2"></p>
+        <p id="KDV">KDV %20: --TL </p><p id="tutar">Tutar: --TL </p>
+        <input type="button" onclick="hesapla()" id="hesapla" value="Hesapla">
+    </div>
+</body>
+</html>

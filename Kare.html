@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KareAlma</title>
+</head>
+<script>
+    function KareAl(a){
+        num = a.value;
+        kare = num*num;
+        document.getElementById("Sonuc").innerHTML = kare;
+    }
+</script>
+<body>
+    <input type="text" placeholder="Sayi Giriniz" onkeyup="KareAl(this)" value="0"> 
+    <p id="Sonuc">0</p>
+</body>
+</html>
