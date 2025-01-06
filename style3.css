@@ -1,0 +1,22 @@
+.Saha{
+  width: 1000px;
+  height: 400px;
+  background-image: url(Images/saha.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.baslik p{
+  background-color: rgba(209, 0, 0, 0.411);
+  position: absolute; top: 30px; left: 30px;
+  text-align: center;
+  font-size: 50px;
+  top: 30px;
+  width: 100%;
+}
+.forma img{
+  background-color: rgba(192, 12, 12, 0.411);
+  position: absolute;
+  width: 150px;
+  padding: 3px;
+}
