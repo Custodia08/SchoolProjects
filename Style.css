@@ -1,41 +1,33 @@
-.kapsa{
-  background-color: gray;
-  display: flex;
-  flex-wrap: wrap;
+main{
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
 }
-.k1{
-  background-color: greenyellow;
-  margin: 7px;
-  width: 300px;
-  height: 100px;
+.kart{
+  position: relative;
 }
-.k2{
-  background-color: greenyellow;
-  margin: 7px;
-  width: 300px;
-  height: 150px;
+.kart img{
+  width: 100%;
+  display: block;
 }
-.k3{
-  background-color: greenyellow;
-  margin: 7px;
-  width: 300px;
-  height: 20px;
+.kart .slogan{
+  height: 100%;
+  width: 50%;
+  background-color: rgba(253, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+
 }
-.k4{
-  background-color:bisque;
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  
-}
-.k4 a, input,button, h2{
-  margin: 15px;
-}
-a{
-  text-decoration-line: none;
-}
-.ka{
-  border-bottom: 2px dotted grey ;
-  margin: 5px;
-  width: 98vw;
+.kart .marka{
+  padding: 20px;
+  border: 2px solid black;
+  position:absolute;
+  background-color: aliceblue;
+  top: 50%;
+  left: 10px;
+  box-sizing: border-box;
 }
